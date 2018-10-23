@@ -1,0 +1,41 @@
+{
+  "name": "thunderplainsjs",
+  "version": "1.0.0",
+  "description": "Slides for ThunderPlainsJS talk on Web Components",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon index.js",
+    "prestart": "cpx node_modules/templiteral/dist/templiteral.es.js slides/resources"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calebdwilliams/ThunderPlainsJS.git"
+  },
+  "keywords": [
+    "web",
+    "components",
+    "ThunderPlainsJS",
+    "OKC",
+    "OKlahoma",
+    "City",
+    "custom",
+    "elements",
+    "slides"
+  ],
+  "author": "Caleb D. Williams <caleb.d.williams@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calebdwilliams/ThunderPlainsJS/issues"
+  },
+  "homepage": "https://github.com/calebdwilliams/ThunderPlainsJS#readme",
+  "dependencies": {
+    "compression": "^1.7.3",
+    "cpx": "^1.5.0",
+    "express": "^4.16.4",
+    "templiteral": "^3.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
