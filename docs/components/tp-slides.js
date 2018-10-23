@@ -1,9 +1,6 @@
 import { Component } from '../resources/templiteral.es.js';
 
 export class ThunderPlainsSlides extends Component {
-    static get boundAttributes() {
-        return ['current'];
-    }
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
@@ -11,11 +8,22 @@ export class ThunderPlainsSlides extends Component {
 
     connectedCallback() {
         super.connectedCallback();
-        this.setActive(this.current);
+        // this.setActive(this.current);
+        this.current = this.slides.length - 1;
     }
 
     get slides() {
         return [...this.querySelectorAll('tp-slide')];
+    }
+
+    get current() {
+        return this.getAttribute('current') || 0;
+    }
+
+    set current(index) {
+        console.log({index})
+        this.setActive(index);
+        this.setAttribute('current', index || 0);
     }
 
     get next() { return +this.current + 1; }
@@ -24,15 +32,13 @@ export class ThunderPlainsSlides extends Component {
     get previousSlide() { return this.slides[this.previous]; }
 
     navigate(event) {
-        this.setActive(this[event.detail]);
+        this.current = this[event.detail];
     }
 
     setActive(index = 0) {
-        console.log({index})
         index ? null : index = 0;
         Array.from(this.querySelectorAll('[active]')).forEach(node => node.removeAttribute('active'));
         this.slides[index].active = true;
-        this.current = index;
     }
 
     render() {
@@ -58,14 +64,14 @@ export class ThunderPlainsSlides extends Component {
                         left: 1rem;
                 }
             </style>
-            <div class="container" (slide-nav)="${this.navigate}" (keydown)="${this._onKeyUp}">
+            <main class="container" (slide-nav)="${this.navigate}" (keydown)="${this._onKeyUp}">
                 <slot></slot>
 
                 <footer>
                     ${this.if(this.previousSlide)`<tp-button class="previous" label="previous">&larr;</tp-button>`}
                     ${this.if(this.nextSlide)`<tp-button class="next" label="next">&rarr;</tp-button>`}
                 </footer>
-            </div>
+            </main>
         `;
     }
 

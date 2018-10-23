@@ -1,6 +1,6 @@
 const express = require('express');
 const compression = require('compression');
-const port = process.env.PORT || 8050;
+const port = process.env.PORT || 8888;
 const app = express();
 
 app.use(express.static('./slides'));

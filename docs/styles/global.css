@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #193549;
+    --foreground: #ffffff;
+    --accent: #ffc600;
+    --accent2: #ffee80;
+    --contrast: #0088ff;
+    --light: #9effff;
+    --dark-orange: #ff9d00;
+    --brace: #e1efff;
+    --string: #a5ff90;
+    --template: #3ad900;
+    --support: #80ffbb;
+    --dom: #e1efff;
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: 'Operator Mono', 'Fira Code', 'Courier New', Courier, monospace;
+}
+
+.title-slide {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+.title-slide .title {
+    color: var(--accent);
+    font-size: 5vh;
+    text-align: center;
+}
+
+.slide {
+    padding: 2vw;
+}
+
+.slide .title {
+    color: var(--accent);
+    font-size: calc(3.5vw);
+    margin-bottom: 2vh;
+}
+
+.slide p,
+.slide li {
+    font-size: 2vw;
+    line-height: 2.5vw;
+}
+
+.slide ul {
+    list-style-type: circle;
+}
+
+.slide p + p, 
+.slide li + li {
+    margin-top: 2.5vh;
+}
+
+.slide ul ul {
+    margin: 2vw 0 0 2vw;
+}
+
+.slide a {
+    color: var(--string);
+}
+
+.slide blockquote:after, .slide blockquote:before {
+  color: var(--string);                              
+  quotes: "\201C""\201D""\2018""\2019";
+} 
+
+.slide blockquote:after {                                                       
+  content: close-quote;
+  vertical-align: bottom;
+}
+
+.slide blockquote:before {                                     
+  content: open-quote;
+  vertical-align: top;
+}
+
+.slide blockquote cite {
+    font-style: italic;
+}
+
+.slide__button {
+    background: transparent;
+    border: 0;
+}
+
+.slide__button--social {
+    background: var(--brace);
+    border-radius: 0.5vw;
+    display: inline-block;
+    margin-top: 2vw;
+    padding: 1vw;
+}
+
+.slide__button--social svg {
+    height: 3vw;
+    width: 3vw;
+}
+
+.slide__bio {
+    display: grid;
+    grid-column-gap: 3vw;
+    grid-template:  "content content aside"
+                    "content content aside"
+                    "content content aside"
+                    "footer  footer  aside" / 1fr 1fr 2fr;
+}
+
+.slide__bio .slide__content {
+    grid-area: content;
+    
+}
+
+.slide__bio .slide__aside {
+    grid-area: aside;
+}
+
+.slide__bio .slide__aside img {
+    max-width: 100%;
+}
+
+.slide__bio .slide__footer {
+    grid-area: footer;
+}
