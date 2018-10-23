@@ -9,6 +9,8 @@ document.addEventListener('keydown', (event) => {
         detail = 'next';
     } else if (key === 'ArrowLeft') {
         detail = 'previous';
+    } else {
+        return;
     }
 
     document.querySelector('tp-slides').navigate({ detail });

@@ -198,3 +198,8 @@ body {
 .slide__figure--light figcaption {
     color: var(--background);
 }
+
+.slide strong {
+    color: var(--accent2);
+    font-weight: 700;
+}

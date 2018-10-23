@@ -9,7 +9,7 @@ export class ThunderPlainsSlides extends Component {
     connectedCallback() {
         super.connectedCallback();
         // this.current = this.slides.length - 1;
-        this.current = this.current;
+        this.current = this.current || 0;
     }
 
     get slides() {
@@ -21,7 +21,6 @@ export class ThunderPlainsSlides extends Component {
     }
 
     set current(index) {
-        console.log({index})
         this.setActive(index);
         this.setAttribute('current', index || 0);
     }
