@@ -8,8 +8,8 @@ export class ThunderPlainsSlides extends Component {
 
     connectedCallback() {
         super.connectedCallback();
-        // this.setActive(this.current);
-        this.current = this.slides.length - 1;
+        // this.current = this.slides.length - 1;
+        this.current = this.current;
     }
 
     get slides() {
