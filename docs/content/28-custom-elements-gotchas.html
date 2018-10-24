@@ -1,0 +1,18 @@
+<article class="slide slide__grid">
+    <section class="slide__content">
+        <h1 class="title">Custom Elements Gotchas</h1>
+
+        <ul>
+            <li>Custom elements cannot add attributes or content inside the constructor</li>
+            <li>Using <code class="js">attributeChangedCallback</code> and the getter/setter pattern can often result in overflowing the call stack</li>
+            <li>Elements using <code class="js">MutationObserver</code> or <code class="js">addEventListeners</code> should be careful to clean up after themselves to prevent memory leaks</li>
+        </ul>
+    </section>
+
+    <aside class="slide__aside">
+        <figure class="slide__figure slide__figure--light">
+            <img src="resources/web-components.svg" alt="Web components logo">
+            <figcaption><p>Web components logo</p></figcaption>
+        </figure>
+    </aside>
+</article>

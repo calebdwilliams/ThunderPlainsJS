@@ -1,0 +1,31 @@
+<article class="slide slide__grid">
+    <section class="slide__content">
+        <h1 class="title">Template</h1>
+
+        <ul>
+            <li>The <code class="js">&lt;template></code> element is also part of the custom elements specification.</li>
+            <li>The content is not immediately rendered inside the document (there is a template element on this slide).</li>
+            <li>A template serves as a fragment that can be cloned and manipulated using <code class="js">document.importNode</code> and then inserted elsewhere.</li>
+        </ul>
+
+        <pre>
+            <code class="html">
+&lt;template id="my-template">
+    &lt;p class="subhead">Templates are neat&lt;/p>
+&lt;/template>
+            </code>
+        </pre>
+        <button id="render-template" class="slide__button slide__button--primary" onclick="javascript:TEMPLATE_DEMO(this)">Render Template</button>
+    </section>
+
+    <template id="my-template">
+        <p class="subhead">Templates are neat</p>
+    </template>
+
+    <aside class="slide__aside">
+        <figure class="slide__figure slide__figure--light">
+            <img src="resources/web-components.svg" alt="Web components logo">
+            <figcaption><p>Web components logo</p></figcaption>
+        </figure>
+    </aside>
+</article>
