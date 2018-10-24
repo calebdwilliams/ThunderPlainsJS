@@ -1,0 +1,21 @@
+<article class="slide">
+    <h1 class="title">Custom Elements <a href="demos/custom-elements.js">(file)</a></h1>
+    <pre>
+        <code class="javascript">
+class MyEl extends HTMLElement {
+static get observedAttributes() { return ['title']; }
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+  }
+  connectedCallback() {
+    this.shadowRoot.innerHTML = `&lt;h1>Title: &lt;span id="title">Default content&lt;/span>&lt;/h1>`;
+  }
+  attributeChangedCallback(name, oldValue, newValue) {
+    this.shadowRoot.querySelector('h1') ? this.shadowRoot.querySelector('#title').innerText = newValue : null;
+  }
+}
+customElements.define('my-el', MyEl);
+        </code>
+    </pre>
+</article>

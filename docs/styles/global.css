@@ -211,3 +211,24 @@ pre > code {
     font-size: 2vw;
     line-height: 2.5vw;
 }
+
+code.js {
+    color: var(--accent2);
+}
+
+.slide__demo {
+    border-left: 2vh solid var(--dark-orange);
+    margin-top: 3vh;
+    padding-left: 3vh;
+}
+
+label {
+    display: block;
+    font-size: 3vh;
+    margin-bottom: 2vh;
+}
+
+label + input {
+    font-size: 3vh;
+    padding: 1vh;
+}

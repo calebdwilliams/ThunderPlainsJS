@@ -1,6 +1,10 @@
 import { Component } from '../resources/templiteral.es.js';
 
 export class ThunderPlainsSlides extends Component {
+    static get observedAttributes() {
+        return ['current'];
+    }
+
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
@@ -10,6 +14,24 @@ export class ThunderPlainsSlides extends Component {
     connectedCallback() {
         super.connectedCallback();
         this.current = this.current || this._searchParams.get('slide') || 0;
+
+        /** 
+         * Make sure the call site is correct
+         * and add the listener 
+         */
+        this._onDocumentKeyUp = this._onDocumentKeyUp.bind(this);
+        document.addEventListener('keydown', this._onDocumentKeyUp);
+    }
+
+    disconnectedCallback() {
+        super.disconnectedCallback();
+        document.removeEventListener('keydown', this._onDocumentKeyUp);
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+        if (name === 'current' && newValue !== oldValue) {
+            this.current = newValue;
+        }
     }
 
     get slides() {
@@ -80,8 +102,18 @@ export class ThunderPlainsSlides extends Component {
         `;
     }
 
-    _onKeyUp(event) {
-        console.log(event);
+    _onDocumentKeyUp(event) {
+        const { key } = event;
+        let detail;
+        if (key === 'ArrowRight') {
+            detail = 'next';
+        } else if (key === 'ArrowLeft') {
+            detail = 'previous';
+        } else {
+            return;
+        }
+    
+        this.navigate({ detail });
     }
 }
 
