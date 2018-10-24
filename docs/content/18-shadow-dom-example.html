@@ -1,0 +1,15 @@
+<article class="slide">
+    <h1 class="title">Shadow DOM</h1>
+
+    <pre>
+        <code class="javascript">
+const div = document.createElement('div');
+div.attachShadow({ mode: 'open' });
+
+div.shadowRoot.innerHTML = `
+    &lt;h1>Hello world&lt;/h1>
+    &lt;p>I'm inside a shadow root&lt;/p>
+`;
+        </code>
+    </pre>
+</article>

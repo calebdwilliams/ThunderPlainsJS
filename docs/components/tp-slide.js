@@ -1,4 +1,5 @@
 import { Component } from '../resources/templiteral.es.js';
+import '../resources/highlight/highlight.pack.js';
 
 export class ThunderPlainsSlide extends Component {
     static get boundAttributes() { return ['active', 'template']; }
@@ -14,7 +15,11 @@ export class ThunderPlainsSlide extends Component {
         if (this.template) {
             fetch(this.template)
             .then(res => res.text())
-            .then(html => this.innerHTML = html);
+            .then(html => this.innerHTML = html)
+            .then(() => {
+                console.log(Array.from(this.querySelectorAll('pre > code')))
+                Array.from(this.querySelectorAll('pre > code')).forEach(hljs.highlightBlock);
+            });
         }
     }
 

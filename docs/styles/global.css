@@ -100,6 +100,7 @@ body {
 }
 
 .slide ul {
+    margin-left: 2vw;
     list-style-type: circle;
 }
 
@@ -181,6 +182,7 @@ body {
 }
 
 .slide__figure img {
+    border-radius: 0.25vw;
     display: block;
     margin: 0 auto;
 }
@@ -191,6 +193,7 @@ body {
 }
 
 .slide__figure figcaption {
+    border-top: 1px solid var(--contrast);
     margin-top: 1vw;
     text-align: right;
 }
@@ -202,4 +205,9 @@ body {
 .slide strong {
     color: var(--accent2);
     font-weight: 700;
+}
+
+pre > code {
+    font-size: 2vw;
+    line-height: 2.5vw;
 }
