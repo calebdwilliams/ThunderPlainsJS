@@ -11,6 +11,6 @@
         <div class="slide__demo">
             <my-el title="Hello world" style="display: inline-block"></my-el> <span>&lt;-- MyEl</span>
             <label for="change-title">Change my-el title</label>
-            <input id="change-title" name="change-title" oninput="javascript:document.querySelector('my-el').setAttribute('title', this.value), document.getElementById('title').innerHTML = ` title=\'${this.value}\'`">
+            <input id="change-title" name="change-title" oninput="javascript:DEMO_FUNCTIONS.myEl(this)">
         </div>
     </article>
