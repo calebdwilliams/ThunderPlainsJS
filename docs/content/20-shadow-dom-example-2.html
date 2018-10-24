@@ -1,0 +1,19 @@
+<article class="slide">
+        <h1 class="title">Shadow DOM</h1>
+
+        <p>The following code uses an invalid element to represent the shadow DOM</p>
+        <pre>
+            <code class="javascript">
+&lt;style&gt; .tomato { color: tomato; } &lt;/style&gt;
+
+&lt;p class="tomato">This content is yellow.&lt;/p>
+
+&lt;div>
+    &lt;#shadow-root>
+        &lt;style> .tomato { color: papayawhip; } &lt;/style>
+        &lt;p class="tomato">This content is papayawhipw.&lt;/p>
+    &lt;/shadow-root>
+&lt;/div>
+            </code>
+        </pre>
+    </article>

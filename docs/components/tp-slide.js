@@ -14,12 +14,11 @@ export class ThunderPlainsSlide extends Component {
 
         if (this.template) {
             fetch(this.template)
-            .then(res => res.text())
-            .then(html => this.innerHTML = html)
-            .then(() => {
-                console.log(Array.from(this.querySelectorAll('pre > code')))
-                Array.from(this.querySelectorAll('pre > code')).forEach(hljs.highlightBlock);
-            });
+                .then(res => res.text())
+                .then(html => this.innerHTML = html)
+                .then(() => {
+                    Array.from(this.querySelectorAll('pre > code')).forEach(hljs.highlightBlock);
+                });
         }
     }
 

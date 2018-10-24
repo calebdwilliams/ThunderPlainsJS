@@ -4,7 +4,10 @@
     <pre>
         <code class="javascript">
 const div = document.createElement('div');
+
 div.attachShadow({ mode: 'open' });
+
+document.body.appendChild('div');
 
 div.shadowRoot.innerHTML = `
     &lt;h1>Hello world&lt;/h1>

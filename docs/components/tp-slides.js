@@ -4,12 +4,12 @@ export class ThunderPlainsSlides extends Component {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
+        this._searchParams = new URLSearchParams(window.location.search);
     }
 
     connectedCallback() {
         super.connectedCallback();
-        // this.current = this.slides.length - 1;
-        this.current = this.current || 0;
+        this.current = this.current || this._searchParams.get('slide') || 0;
     }
 
     get slides() {
@@ -21,8 +21,10 @@ export class ThunderPlainsSlides extends Component {
     }
 
     set current(index) {
-        this.setActive(index);
-        this.setAttribute('current', index || 0);
+        if (this.slides[index]) {
+            this.setActive(index);
+            this.setAttribute('current', index || 0);
+        }
     }
 
     get next() { return +this.current + 1; }
@@ -36,8 +38,12 @@ export class ThunderPlainsSlides extends Component {
 
     setActive(index = 0) {
         index ? null : index = 0;
-        Array.from(this.querySelectorAll('[active]')).forEach(node => node.removeAttribute('active'));
-        this.slides[index].active = true;
+        if (this.slides[index]) {
+            Array.from(this.querySelectorAll('[active]')).forEach(node => node.removeAttribute('active'));
+            this.slides[index].active = true;
+            this._searchParams.set('slide', index.toString());
+            window.history.replaceState({}, '', location.pathname + '?' + this._searchParams);
+        }
     }
 
     render() {
@@ -67,8 +73,8 @@ export class ThunderPlainsSlides extends Component {
                 <slot></slot>
 
                 <footer>
-                    ${this.if(this.previousSlide)`<tp-button class="previous" label="previous">&larr;</tp-button>`}
-                    ${this.if(this.nextSlide)`<tp-button class="next" label="next">&rarr;</tp-button>`}
+                    <tp-button class="previous" label="previous">&larr;</tp-button>
+                    <tp-button class="next" label="next">&rarr;</tp-button>
                 </footer>
             </main>
         `;
