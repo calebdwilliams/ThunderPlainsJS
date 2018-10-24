@@ -1,4 +1,8 @@
 <article class="slide slide__grid">
+    <template id="my-template">
+        <p class="subhead">Templates are neat</p>
+    </template>
+
     <section class="slide__content">
         <h1 class="title">Template</h1>
 
@@ -15,17 +19,13 @@
 &lt;/template>
             </code>
         </pre>
-        <button id="render-template" class="slide__button slide__button--primary" onclick="javascript:DEMO_FUNCTIONS.templateDemo(this)">Render Template</button>
     </section>
-
-    <template id="my-template">
-        <p class="subhead">Templates are neat</p>
-    </template>
 
     <aside class="slide__aside">
         <figure class="slide__figure slide__figure--light">
             <img src="resources/web-components.svg" alt="Web components logo">
             <figcaption><p>Web components logo</p></figcaption>
         </figure>
+        <button id="render-template" class="slide__button slide__button--primary" onclick="javascript:DEMO_FUNCTIONS.templateDemo(this)">Render Template</button>
     </aside>
 </article>

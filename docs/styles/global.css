@@ -165,8 +165,9 @@ body {
     border: 0.5vw solid var(--accent2);
     cursor: pointer;
     font-size: 1vw;
-    margin-top: 2vw;
+    margin: 2vw 0;
     padding: 1vw;
+    width: 100%;
 }
 
 .slide__button--primary:hover {
