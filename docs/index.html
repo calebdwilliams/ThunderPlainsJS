@@ -63,7 +63,7 @@
                 'use strict';
                 if ('serviceWorker' in navigator) {
                     navigator.serviceWorker.register('/ThunderPlainsJS/thunderplains.sw.js',{
-                        scope: '/ThunderPlainsJS'
+                        scope: '/ThunderPlainsJS/'
                     }).then(() =>
                         console.debug('Service Worker Registered')
                     );
