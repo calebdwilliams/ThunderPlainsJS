@@ -6,7 +6,8 @@
   "scripts": {
     "test": "test",
     "start": "nodemon index.js",
-    "prestart": "cpx node_modules/templiteral/dist/templiteral.es.js slides/resources"
+    "prestart": "cpx node_modules/templiteral/dist/templiteral.es.js slides/resources",
+    "build": "workbox generateSW workbox.config.js"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "templiteral": "^3.4.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "workbox-cli": "^3.6.3"
   }
 }
