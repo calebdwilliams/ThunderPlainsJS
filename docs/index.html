@@ -58,10 +58,10 @@
         </noscript>
         <script>
             if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('thunderplains.sw.js')
-                    .then(function() {
-                        console.log('Service Worker Registered');
-                    });
+                navigator.serviceWorker.register('/ThunderPlainsJS/thunderplains.sw.js')
+                    .then(() =>
+                        console.debug('Service Worker Registered')
+                    );
             }
         </script>
     </body>
