@@ -4,10 +4,11 @@
 
         <ul>
             <li>
-                <h2 class="slide__subhead">Custom Elements</h2>
+                <h2 class="slide__subhead">Shadow DOM</h2>
                 <ul>
-                    <li>Custom elements can be used anywhere for any purpose (they can even just be declarative wrappers for things like state management or event handling like in React).</li>
-                    <li>Like Vue, custom elements are incrementally adoptable. You can use one or 100 in any given app depending on your app's needs.</li>
+                    <li>Use when you want to encapsulate/hide some behavior or styles or when you need some sort of transclusion.</li>
+                    <li>Content remains a11y accessible inside the shadow DOM, but might not be selectable.</li>
+                    <li>If you want the content to be generally selectable from the document, don't use shadow DOM.</li>
                 </ul>
             </li>
         </ul>
