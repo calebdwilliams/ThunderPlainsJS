@@ -11,6 +11,7 @@
         <link href="/ThunderPlainsJS/styles/global.css" rel="stylesheet">
         <link href="/ThunderPlainsJS/styles/monokai-sublime.css" rel="stylesheet">
         <link href="/ThunderPlainsJS/manifest.json" rel="manifest">
+        <link href="/ThunderPlainsJS/resources/icons/favicon-32.png" rel="shortcut icon">
     </head>
     <body>
         <tp-slides>
@@ -58,12 +59,19 @@
             </article>
         </noscript>
         <script>
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('/ThunderPlainsJS/thunderplains.sw.js')
-                    .then(() =>
-                        console.debug('Service Worker Registered')
-                    );
-            }
+            (function() {
+                'use strict';
+                if ('serviceWorker' in navigator) {
+                    navigator.serviceWorker.register('/ThunderPlainsJS/thunderplains.sw.js')
+                        .then(() =>
+                            console.debug('Service Worker Registered')
+                        );
+                }
+
+                navigator.serviceWorker.addEventListener('message', (event) =>{
+                    console.debug(event);
+                });
+            }());
         </script>
     </body>
 </html>

@@ -173,7 +173,11 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "e3bbf440e729c6adb175a4f1c8518e62"
+    "revision": "3ff300fb683e19902ee1bd78f6445700"
+  },
+  {
+    "url": "manifest.json",
+    "revision": "d3d31cc6c083339ea1839b1a40bab08e"
   },
   {
     "url": "presentation.js",
@@ -184,8 +188,48 @@ self.__precacheManifest = [
     "revision": "5c69e565f1ae6d7717fb3ecd2be004ad"
   },
   {
+    "url": "resources/family.jpg",
+    "revision": "33adfde1eddfdaca04ec71620acb78f9"
+  },
+  {
+    "url": "resources/highlight/CHANGES.md",
+    "revision": "11ed27068d438955be488dc0a9790c10"
+  },
+  {
     "url": "resources/highlight/highlight.pack.js",
     "revision": "2af27be8dc0e63ef3867a193a2949b98"
+  },
+  {
+    "url": "resources/highlight/README.md",
+    "revision": "76d4522da594de34d6ec69f86f83aa4a"
+  },
+  {
+    "url": "resources/highlight/README.ru.md",
+    "revision": "f8b4c1826598694c77d4618f1d609b12"
+  },
+  {
+    "url": "resources/icons/favicon-128.png",
+    "revision": "c876b42e0146e85037e7b7ac981563a0"
+  },
+  {
+    "url": "resources/icons/favicon-16.png",
+    "revision": "b66ae3fd47d6c97eeea3136d4290ff4e"
+  },
+  {
+    "url": "resources/icons/favicon-196.png",
+    "revision": "6bedbcb626082c1fbc23860f12bd6079"
+  },
+  {
+    "url": "resources/icons/favicon-32.png",
+    "revision": "9bea1284a12ed8726b7c30c06e532c0e"
+  },
+  {
+    "url": "resources/icons/favicon-512.png",
+    "revision": "22264630f9fcad3b29c1ddd22fd85abe"
+  },
+  {
+    "url": "resources/icons/favicon-96.png",
+    "revision": "a377c9735cc44547321d7daa52b694e0"
   },
   {
     "url": "resources/jquery.png",

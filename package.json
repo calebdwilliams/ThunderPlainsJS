@@ -6,7 +6,7 @@
   "scripts": {
     "test": "test",
     "start": "nodemon index.js",
-    "prestart": "cpx node_modules/templiteral/dist/templiteral.es.js slides/resources",
+    "prestart": "cpx node_modules/templiteral/dist/templiteral.es.js docs/resources",
     "build": "workbox generateSW workbox.config.js"
   },
   "repository": {
