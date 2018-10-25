@@ -5,6 +5,8 @@
         <ul>
             <li>The standard way to style a shadow DOM is by adding a <code>&lt;style></code> element inside the shadow root.</li>
             <li>There is currently a proposal to provide <a href="https://github.com/w3c/webcomponents/issues/468">default styles to custom elements</a>.</li>
+            <li>Styles are deduplicated internally, so there no performance impacts of multiple <code class="js">&lt;style></code> elements.</li>
+            <li>I wrote a small library to handle shadow DOM stylings called <a href="https://www.npmjs.com/package/stylit">Stylit</a>.</li>
         </ul>
     </section>
 
