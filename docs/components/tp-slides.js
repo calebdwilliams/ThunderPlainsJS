@@ -75,20 +75,18 @@ export class ThunderPlainsSlides extends Component {
                     box-sizing: border-box;
                     display: flex;
                     flex-flow: column;
-                    height: 100vh;
+                    height: 92vh;
+                    overflow-y: scroll;
                     padding: 1rem;
                     position: relative;
                     width: 100vw;
                 }
-                .next {
-                    position: absolute;
-                        bottom: 1rem;
-                        right: 1rem;
-                }
-                .previous {
-                    position: absolute;
-                        bottom: 1rem;
-                        left: 1rem;
+                footer {
+                    display: flex;
+                    justify-content: space-between;
+                    position: fixed;
+                        bottom: 2vh;
+                    width: calc(100% - 3vh);
                 }
             </style>
             <main class="container" (slide-nav)="${this.navigate}" (keydown)="${this._onKeyUp}">

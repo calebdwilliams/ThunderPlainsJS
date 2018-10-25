@@ -13,7 +13,16 @@ window.DEMO_FUNCTIONS = {
     templateDemo(target) {
         const node = document.getElementById('my-template');
         const clone = document.importNode(node.content, true);
+        clone.getElementById('neat').innerText = document.getElementById('neat').value;
         target.after(clone);
     }
 
 };
+
+document.addEventListener('submit', event => {
+    event.preventDefault();
+    const node = document.getElementById('my-template');
+    const clone = document.importNode(node.content, true);
+    clone.getElementById('neat').innerText = document.getElementById('neat').value;
+    event.target.after(clone);
+});

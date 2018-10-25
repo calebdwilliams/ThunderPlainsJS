@@ -2,16 +2,13 @@
     <section class="slide__content">
         <h1 class="title">Custom Elements API</h1>
 
+        <p>Life cycle methods:</p>
+        
         <ul>
-            <li><code class="js">static observedAttributes: [string]</code> &mdash; an array of strings to watch for changes to trigger the attributeChangedCallback</li>
-            <li>Provide basic lifecycle methods
-                <ul>
-                    <li><code class="js">connectedCallback</code> &mdash; fired when the element is attached to the DOM tree</li>
-                    <li><code class="js">disconnectedCallback</code> &mdash; fired when the element is removed from the DOM tree</li>
-                    <li><code class="js">adoptedCallback</code> &mdash; fired when the element is adopted into a new part of the DOM tree</li>
-                    <li><code class="js">attributeChangedCallback</code> &mdash; fired when one of the element's attributes changes if that attribute is included in the element's static observedAttributes</li>
-                </ul>
-            </li>
+            <li><code class="js">connectedCallback</code> &mdash; fired when the element is attached to the DOM tree</li>
+            <li><code class="js">disconnectedCallback</code> &mdash; fired when the element is removed from the DOM tree</li>
+            <li><code class="js">adoptedCallback</code> &mdash; fired when the element is adopted into a new part of the DOM tree</li>
+            <li><code class="js">attributeChangedCallback</code> &mdash; fired when one of the element's attributes changes if that attribute is included in the element's static observedAttributes</li>
         </ul>
     </section>
 

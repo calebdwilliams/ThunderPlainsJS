@@ -29,7 +29,7 @@ self.__precacheManifest = [
   },
   {
     "url": "components/tp-slides.js",
-    "revision": "af5ca81a0bd646726ee3a484a8958714"
+    "revision": "40c82d2b40e6e918868d627a53e992be"
   },
   {
     "url": "content/01-title-card.html",
@@ -125,7 +125,11 @@ self.__precacheManifest = [
   },
   {
     "url": "content/24-custom-elements-api.html",
-    "revision": "76960c101689f3180a8780b41a40bf29"
+    "revision": "cfc1f2a61151ba7f424070dbf7889df0"
+  },
+  {
+    "url": "content/24b-custom-elements-api.html",
+    "revision": "e17fe666813e84f6d5103ba0966d2d02"
   },
   {
     "url": "content/25-custom-elements-example.html",
@@ -157,7 +161,7 @@ self.__precacheManifest = [
   },
   {
     "url": "content/31-template.html",
-    "revision": "288e2eb86ca4c39f83be8bf0c0cca083"
+    "revision": "9284846c8c579a74424816b31e94dd2d"
   },
   {
     "url": "content/32-template-when-to-use.html",
@@ -173,7 +177,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "efa6977041b0a3e6e2f8b1f64f78d6b8"
+    "revision": "2efbf8607e23c9ee61b069a80e05b308"
   },
   {
     "url": "manifest.json",
@@ -181,7 +185,7 @@ self.__precacheManifest = [
   },
   {
     "url": "presentation.js",
-    "revision": "a62d28c0601a4c29fb7894a8f0358872"
+    "revision": "14161751c458ec0e3aa0e0d2a39eca1c"
   },
   {
     "url": "resources/angular.svg",

@@ -40,6 +40,7 @@
             <tp-slide template="content/22-slot-example.html"></tp-slide>
             <tp-slide template="content/23-custom-elements.html"></tp-slide>
             <tp-slide template="content/24-custom-elements-api.html"></tp-slide>
+            <tp-slide template="content/24b-custom-elements-api.html"></tp-slide>
             <tp-slide template="content/25-custom-elements-example.html"></tp-slide>
             <tp-slide template="content/26-the-most-useless-demo.html"></tp-slide>
             <tp-slide template="content/27-custom-elements-demo.html"></tp-slide>
@@ -72,6 +73,8 @@
                 navigator.serviceWorker.addEventListener('message', (event) =>{
                     console.debug(event);
                 });
+
+                document.addEventListener('beforeinstallprompt', console.log);
             }());
         </script>
     </body>
