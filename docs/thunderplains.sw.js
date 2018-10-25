@@ -128,47 +128,51 @@ self.__precacheManifest = [
     "revision": "cfc1f2a61151ba7f424070dbf7889df0"
   },
   {
-    "url": "content/24b-custom-elements-api.html",
+    "url": "content/25-custom-elements-api.html",
     "revision": "e17fe666813e84f6d5103ba0966d2d02"
   },
   {
-    "url": "content/25-custom-elements-example.html",
+    "url": "content/26-custom-elements-example.html",
     "revision": "872ca790a237ab79651d328570911bda"
   },
   {
-    "url": "content/26-the-most-useless-demo.html",
+    "url": "content/27-the-most-useless-demo.html",
     "revision": "15e96857f4fc6e172037bcdfd42bb220"
   },
   {
-    "url": "content/27-custom-elements-demo.html",
+    "url": "content/28-custom-elements-demo.html",
     "revision": "2f9ea2f557b38cb56602d1fb1ea73cd6"
   },
   {
-    "url": "content/28-custom-elements-gotchas.html",
+    "url": "content/29-custom-elements-gotchas.html",
     "revision": "130e3515967fb7202b4cba91b0bd5018"
   },
   {
-    "url": "content/29-styling-custom-elements.html",
-    "revision": "3ed7276f48420c5344213539a8934f58"
+    "url": "content/30-custom-elements-tools.html",
+    "revision": "5a5076a0bd1d3e20b8815c4dd0941cb7"
   },
   {
-    "url": "content/30-when-to-use.html",
+    "url": "content/31-styling-custom-elements.html",
+    "revision": "29fd4d01984738fcd587aaadabe10889"
+  },
+  {
+    "url": "content/32-when-to-use.html",
     "revision": "0fa1a6c7653aa09e120ce4b2e556e8f6"
   },
   {
-    "url": "content/30b-when-to-use.html",
+    "url": "content/33-when-to-use.html",
     "revision": "201cc2cd141de938a351a4ec25fa451d"
   },
   {
-    "url": "content/31-template.html",
-    "revision": "9284846c8c579a74424816b31e94dd2d"
+    "url": "content/34-template.html",
+    "revision": "bade2f95f56cc953a6aadbd81c83465f"
   },
   {
-    "url": "content/32-template-when-to-use.html",
+    "url": "content/35-template-when-to-use.html",
     "revision": "95e3497a6fdc04746d41498c204ca3d5"
   },
   {
-    "url": "content/33-browser-support.html",
+    "url": "content/36-browser-support.html",
     "revision": "1a6861ba8bd2e903220f654771e936ec"
   },
   {
@@ -177,7 +181,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "2efbf8607e23c9ee61b069a80e05b308"
+    "revision": "8f6170adb5fb1c64f490c4d5cd8941a4"
   },
   {
     "url": "manifest.json",
