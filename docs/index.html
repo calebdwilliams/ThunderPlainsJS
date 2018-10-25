@@ -7,9 +7,9 @@
         <meta name="viewport" content="width=device-width, minimum-scale=1,initial-scale=1">
         <meta name="description" content="Embracing the Future of the Web Platform with Web Components."/>
         <meta name="theme-color" content="#193549">
-        <script src="presentation.js" type="module"></script>
-        <link href="styles/global.css" rel="stylesheet">
-        <link href="resources/highlight/styles/monokai-sublime.css" rel="stylesheet">
+        <script src="/presentation.js" type="module"></script>
+        <link href="/styles/global.css" rel="stylesheet">
+        <link href="/resources/highlight/styles/monokai-sublime.css" rel="stylesheet">
     </head>
     <body>
         <tp-slides>
@@ -56,5 +56,13 @@
                 <p>I mean, to be fair, it's from a conference about front-end development, so I don't really know what you expected.</p>
             </article>
         </noscript>
+        <script>
+            if ('serviceWorker' in navigator) {
+                // navigator.serviceWorker.register('thunderplains.sw.js')
+                //     .then(function() {
+                //         console.log('Service Worker Registered');
+                //     });
+            }
+        </script>
     </body>
 </html>
