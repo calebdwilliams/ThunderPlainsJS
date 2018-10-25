@@ -4,5 +4,5 @@ module.exports = {
     '**/*.{js,html,json,svg,jpg,md,png,css}'
   ],
   swDest: 'docs/thunderplains.sw.js',
-  navigateFallback: '/ThunderPlainsJS'
+  navigateFallback: '/ThunderPlainsJS/'
 };

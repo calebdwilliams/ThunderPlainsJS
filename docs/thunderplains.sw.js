@@ -173,7 +173,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "3ff300fb683e19902ee1bd78f6445700"
+    "revision": "efa6977041b0a3e6e2f8b1f64f78d6b8"
   },
   {
     "url": "manifest.json",
@@ -271,4 +271,4 @@ self.__precacheManifest = [
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/ThunderPlainsJS");
+workbox.routing.registerNavigationRoute("/ThunderPlainsJS/");
