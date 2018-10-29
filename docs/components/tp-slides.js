@@ -64,7 +64,7 @@ export class ThunderPlainsSlides extends Component {
             Array.from(this.querySelectorAll('[active]')).forEach(node => node.removeAttribute('active'));
             this.slides[index].active = true;
             this._searchParams.set('slide', index.toString());
-            window.history.replaceState({}, '', location.pathname + '?' + this._searchParams);
+            window.history.replaceState({}, '', `${location.pathname}?${this._searchParams}`);
         }
     }
 
