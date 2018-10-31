@@ -117,7 +117,7 @@ self.__precacheManifest = [
   },
   {
     "url": "content/22-slot-example.html",
-    "revision": "8739754e549f582a9bb92b4dc0ee4dbb"
+    "revision": "5dd49097bf97d20a3d0e0e722a566b3d"
   },
   {
     "url": "content/23-custom-elements.html",
@@ -181,7 +181,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "8f6170adb5fb1c64f490c4d5cd8941a4"
+    "revision": "b1a2da6c038c208660f0ef39c7cfba5c"
   },
   {
     "url": "manifest.json",
