@@ -15,8 +15,20 @@ window.DEMO_FUNCTIONS = {
         const clone = document.importNode(node.content, true);
         clone.getElementById('neat').innerText = document.getElementById('neat').value;
         target.after(clone);
+    },
+    buildShadowDOM() {
+        const shadowBlock = document.getElementById('shadow-block');
+        console.log('yass', shadowBlock)
+        shadowBlock.attachShadow({ mode: 'open' });
+        shadowBlock.shadowRoot.innerHTML = `
+            <style>
+                .tomato { color: papayawhip; }
+                p { font-size: 3.75vh; line-height: 4.5vh; }
+            </style>
+            <p class="tomato">This content is papayawhip.</p>
+            <slot></slot>
+        `;
     }
-
 };
 
 document.addEventListener('submit', event => {

@@ -1,19 +1,28 @@
 <article class="slide">
-        <h1 class="title">Shadow DOM &mdash; slot</h1>
+    <h1 class="title">Shadow DOM &mdash; slot</h1>
 
-        <p>The following code uses an invalid element to represent the shadow DOM</p>
-        <pre>
-            <code class="html">
+    <p>The following code uses an invalid element to represent the shadow DOM</p>
+    <pre>
+        <code class="html">
 &lt;style&gt; .tomato { color: tomato; } &lt;/style&gt;
 
 &lt;div>
-    &lt;p class="tomato">This content is tomato.&lt;/p> &lt;!-- Will display in slot --&gt;
-    &lt;#shadow-root>
-        &lt;style> .tomato { color: papayawhip; } &lt;/style>
-        &lt;p class="tomato">This content is papayawhip.&lt;/p>
-        &lt;slot>&lt;/slot> &lt;-- The light DOM p.tomato will appear in this location --&gt;
-    &lt;/#shadow-root>
+&lt;p class="tomato">This content is tomato.&lt;/p> &lt;!-- Will display in slot --&gt;
+&lt;#shadow-root>
+    &lt;style> .tomato { color: papayawhip; } &lt;/style>
+    &lt;p class="tomato">This content is papayawhip.&lt;/p>
+    &lt;slot>&lt;/slot> &lt;!-- The light DOM p.tomato will appear in this location --&gt;
+&lt;/#shadow-root>
 &lt;/div>
-            </code>
-        </pre>
-    </article>
+        </code>
+    </pre>
+    <style> .tomato { color: tomato; } </style>
+
+    <div class="slide-demo">
+        <button class="slide__button slide__button--primary" onclick="javascript:DEMO_FUNCTIONS.buildShadowDOM()">Add shadow DOM</button>
+        <p class="tomato">This content is tomato</p>
+        <div id="shadow-block">
+            <p class="tomato">This content is tomato</p>
+        </div>
+    </div>
+</article>

@@ -117,7 +117,7 @@ self.__precacheManifest = [
   },
   {
     "url": "content/22-slot-example.html",
-    "revision": "5dd49097bf97d20a3d0e0e722a566b3d"
+    "revision": "b919526baffc3f2a09f875a10ec90e7d"
   },
   {
     "url": "content/23-custom-elements.html",
@@ -189,7 +189,7 @@ self.__precacheManifest = [
   },
   {
     "url": "presentation.js",
-    "revision": "14161751c458ec0e3aa0e0d2a39eca1c"
+    "revision": "9ac942b8648cc142e3d513732e29df41"
   },
   {
     "url": "resources/angular.svg",
