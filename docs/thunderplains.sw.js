@@ -29,7 +29,7 @@ self.__precacheManifest = [
   },
   {
     "url": "components/tp-slides.js",
-    "revision": "40c82d2b40e6e918868d627a53e992be"
+    "revision": "349dec7464112afa5fbc024324d757ff"
   },
   {
     "url": "content/01-title-card.html",
@@ -37,7 +37,7 @@ self.__precacheManifest = [
   },
   {
     "url": "content/02-this-is-it.html",
-    "revision": "8bc447e0df2aea98be77c13148d29dd5"
+    "revision": "5cd35a85bb16a1b5a4ac39bd1085a72e"
   },
   {
     "url": "content/03-who-am-i.html",
@@ -181,7 +181,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "b1a2da6c038c208660f0ef39c7cfba5c"
+    "revision": "e691ce2d401cacae87e5ef91c9ce03c4"
   },
   {
     "url": "manifest.json",
