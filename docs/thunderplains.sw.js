@@ -133,7 +133,7 @@ self.__precacheManifest = [
   },
   {
     "url": "content/26-custom-elements-example.html",
-    "revision": "872ca790a237ab79651d328570911bda"
+    "revision": "6b39a1ffd9fd0db290ab025ebb2ff3ea"
   },
   {
     "url": "content/27-the-most-useless-demo.html",
@@ -141,7 +141,7 @@ self.__precacheManifest = [
   },
   {
     "url": "content/28-custom-elements-demo.html",
-    "revision": "2f9ea2f557b38cb56602d1fb1ea73cd6"
+    "revision": "a29552b9cf0b810e9aba2c8cdeb98f21"
   },
   {
     "url": "content/29-custom-elements-gotchas.html",
@@ -177,7 +177,7 @@ self.__precacheManifest = [
   },
   {
     "url": "demos/custom-elements.js",
-    "revision": "c3ad0f46fdc4b8bbd107fce55a056cb9"
+    "revision": "b107edc876a27427d058c6eee704296e"
   },
   {
     "url": "index.html",

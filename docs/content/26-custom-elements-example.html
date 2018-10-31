@@ -9,7 +9,9 @@ static get observedAttributes() { return ['title']; }
     this.attachShadow({ mode: 'open' });
   }
   connectedCallback() {
-    this.shadowRoot.innerHTML = `&lt;h1>Title: &lt;span id="title">Default content&lt;/span>&lt;/h1>`;
+    this.shadowRoot.innerHTML = `
+    &lt;style> :host { display: inline-block; } &lt;/style>
+    &lt;h1>Title: &lt;span id="title">Default content&lt;/span>&lt;/h1>`;
   }
   attributeChangedCallback(name, oldValue, newValue) {
     this.shadowRoot.querySelector('h1') ? this.shadowRoot.querySelector('#title').innerText = newValue : null;

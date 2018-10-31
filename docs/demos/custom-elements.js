@@ -7,7 +7,9 @@ class MyEl extends HTMLElement {
     }
 
     connectedCallback() {
-        this.shadowRoot.innerHTML = `<h1>Title: <span id="title">Default content</span></h1>`;
+        this.shadowRoot.innerHTML = `
+        <style>:host { display: inline-block } </style>
+        <h1>Title: <span id="title">Default content</span></h1>`;
     }
 
     attributeChangedCallback(name, oldValue, newValue) {
