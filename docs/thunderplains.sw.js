@@ -180,12 +180,16 @@ self.__precacheManifest = [
     "revision": "1a6861ba8bd2e903220f654771e936ec"
   },
   {
+    "url": "content/37-thank-you.html",
+    "revision": "a0490336d9fbbc26f8abe71862cf3717"
+  },
+  {
     "url": "demos/custom-elements.js",
     "revision": "b107edc876a27427d058c6eee704296e"
   },
   {
     "url": "index.html",
-    "revision": "dd73185ec578f7934d92191211fd46f0"
+    "revision": "9fad84e5d5cc6511bf4e09426c6320d1"
   },
   {
     "url": "manifest.json",
