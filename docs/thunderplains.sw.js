@@ -37,7 +37,7 @@ self.__precacheManifest = [
   },
   {
     "url": "content/02-this-is-it.html",
-    "revision": "5cd35a85bb16a1b5a4ac39bd1085a72e"
+    "revision": "626984a002768c7a3cc22135ebacd8a6"
   },
   {
     "url": "content/03-who-am-i.html",
@@ -136,6 +136,10 @@ self.__precacheManifest = [
     "revision": "6b39a1ffd9fd0db290ab025ebb2ff3ea"
   },
   {
+    "url": "content/26b-custom-elements-best-practices.html",
+    "revision": "d6aac8365d7d9713d2707add5b89cb8a"
+  },
+  {
     "url": "content/27-the-most-useless-demo.html",
     "revision": "15e96857f4fc6e172037bcdfd42bb220"
   },
@@ -181,7 +185,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "e691ce2d401cacae87e5ef91c9ce03c4"
+    "revision": "bf99e7e6eda3581613c05172b2be00a8"
   },
   {
     "url": "manifest.json",
@@ -265,7 +269,7 @@ self.__precacheManifest = [
   },
   {
     "url": "styles/global.css",
-    "revision": "c7bb262838649ce6ca272e6e857777b3"
+    "revision": "dbddb9c6221ea2975c1af53764f54480"
   },
   {
     "url": "styles/highlight.css",

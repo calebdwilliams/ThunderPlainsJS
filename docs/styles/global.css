@@ -157,6 +157,10 @@ body {
     padding: 1vw;
 }
 
+a.social {
+    color: var(--background);
+}
+
 .slide__button--social svg {
     height: 3vh;
     width: 3vh;
