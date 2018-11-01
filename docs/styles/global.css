@@ -149,6 +149,10 @@ body {
     border: 0;
 }
 
+.slide__button--hidden {
+    display: none;
+}
+
 .slide__button--social {
     background: var(--brace);
     border-radius: 0.5vw;

@@ -33,7 +33,7 @@ self.__precacheManifest = [
   },
   {
     "url": "content/01-title-card.html",
-    "revision": "ef74fa408d0c141714e8fa5fd18f9935"
+    "revision": "74cd7ee2862325ac54d216d40f12945c"
   },
   {
     "url": "content/02-this-is-it.html",
@@ -185,7 +185,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "bf99e7e6eda3581613c05172b2be00a8"
+    "revision": "b02e5edcd44431889fa73c40b38a98dc"
   },
   {
     "url": "manifest.json",
@@ -269,7 +269,7 @@ self.__precacheManifest = [
   },
   {
     "url": "styles/global.css",
-    "revision": "dbddb9c6221ea2975c1af53764f54480"
+    "revision": "5fc2644ff70f5e4d48df5ff1b9f3bf44"
   },
   {
     "url": "styles/highlight.css",

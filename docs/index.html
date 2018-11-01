@@ -66,16 +66,42 @@
             (function() {
                 'use strict';
                 if ('serviceWorker' in navigator) {
+                    let deferredPrompt;
+
                     navigator.serviceWorker.register('/ThunderPlainsJS/thunderplains.sw.js',{
                         scope: '/ThunderPlainsJS/'
                     }).then(() =>
                         console.debug('Service Worker Registered')
                     );
-                }
 
-                navigator.serviceWorker.addEventListener('message', (event) =>{
-                    console.debug(event);
-                });
+                    navigator.serviceWorker.addEventListener('message', (event) =>{
+                        console.debug(event);
+                    });
+
+                    window.addEventListener('beforeinstallprompt', (event) => {
+                        e.preventDefault();
+                        deferredPrompt = event;
+
+                        setTimeout(() => {
+                            const button = document.querySelector('.slide__button--hidden');
+                            button.classList.remove('slide__button--hidden');
+                            button.addEventListener('click', (event) => {
+                                button.classList.add('slide__button--hidden');
+                                deferredPrompt.prompt();
+
+                                deferredPrompt.userChoice
+                                    .then((choice) => {
+                                        if (choice === 'accepted') {
+                                            console.log('App installed');
+                                        } else {
+                                            console.log('Install rejected');
+                                        }
+                                        deferredPrompt = null;
+                                    });
+                            });
+                        }, 200);
+                    });
+                }
 
                 document.addEventListener('beforeinstallprompt', console.log);
             }());
